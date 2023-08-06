@@ -1,4 +1,4 @@
-# FastApi - Django
+# FastAPI - Django
 
 This is a simple bundle of two frameworks Django and FastAPI. To combine the best of two frameworks. Django admin panel and simple ORM with api routing and schemas FastAPI.
 

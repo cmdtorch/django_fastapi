@@ -18,10 +18,13 @@ class BaseSchema(BaseModel):
                 field_type = info.annotation
 
             if issubclass(field_type, BaseModel):
-                if not hasattr(instance, '_prefetched_objects_cache'):
+                if name in instance._state.fields_cache:
+                    data[name] = instance._state.fields_cache[name]
+                elif hasattr(instance, '_prefetched_objects_cache'):
+                    values = instance._prefetched_objects_cache.get(name, None)
+                    data[name] = values
+                else:
                     data[name] = None
-                values = instance._prefetched_objects_cache.get(name, None)
-                data[name] = values
             else:
                 data[name] = getattr(instance, name)
         return data

@@ -1,12 +1,9 @@
 # FastApi - Django
 
-----
-
 This is a simple bundle of two frameworks Django and FastAPI. To combine the best of two frameworks. Django admin panel and simple ORM with api routing and schemas FastAPI.
 
 ## Installation
 
-----
 Clone repository
 ```bash
 $ git clone https://github.com/Emil4154515/django_fastapi
@@ -18,7 +15,6 @@ $ pip install -r requirements.txt
 
 ## Until run
 
-----
 
 Migration
 ```bash
@@ -27,7 +23,6 @@ python manage.py migrate
 
 ## ORM Usage
 
-----
 ###Simple Usage
 ```python
 from datetime import datetime
@@ -107,7 +102,6 @@ def get_article():
 
 ## Run
 
-----
 ```bash
 $ uvicorn mysite.app:fastapp --port 8000 --reload
 ...

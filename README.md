@@ -23,7 +23,7 @@ python manage.py migrate
 
 ## ORM Usage
 
-###Simple Usage
+### Simple Usage
 ```python
 from datetime import datetime
 from fastapi import APIRouter
@@ -45,7 +45,7 @@ def get_user():
     return User.objects.first()
 ```
 
-###Relation fields
+### Relation fields
 `models.py`
 ```python
 from django.db import models

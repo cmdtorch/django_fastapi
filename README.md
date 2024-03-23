@@ -6,9 +6,9 @@ This is a simple bundle of two frameworks Django and FastAPI. To combine the bes
 
 #### Clone repository
 ```bash
-$ git clone https://github.com/Emil4154515/django_fastapi
+$ git clone https://github.com/cmdtorch/django_fastapi
 ```
-or download <a href="https://github.com/Emil4154515/django_fastapi/releases/tag/v0.2" class="external-link" target="_blank">archive</a>
+or download <a href="https://github.com/cmdtorch/django_fastapi/releases/tag/v0.2" class="external-link" target="_blank">archive</a>
 #### Install packages
 ```bash
 $ pip install -r requirements.txt
